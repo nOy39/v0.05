@@ -18,5 +18,10 @@
     "default_icon": "resource/img/icon16.png",
     "default_popup": "popup/popup.html",
     "default_title": "Popup extension"
-  }
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "identity"
+  ]
 }
