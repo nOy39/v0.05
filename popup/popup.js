@@ -2,6 +2,7 @@ function clicked(){
   console.log("popup.js running")
 }
 var msg = {
+  "action": "fromPopup"
   "head": "Popup message",
   "status": "Response"
 }
