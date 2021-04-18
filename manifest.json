@@ -20,8 +20,10 @@
     "default_title": "Popup extension"
   },
   "permissions": [
-    "storage",
+    "background",
+    "tabs",
     "activeTab",
-    "identity"
+    "storage",
+    "webRequest"
   ]
 }
