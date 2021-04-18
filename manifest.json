@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Popup Extension",
+  "description": "Base Level Extension",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["js/content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "browser_action": {
+    "default_icon": "resource/img/icon16.png",
+    "default_popup": "popup/popup.html",
+    "default_title": "Popup extension"
+  }
+}
