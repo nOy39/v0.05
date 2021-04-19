@@ -2,7 +2,7 @@ let parseData = [];
 let monthData = [];
 let calcSum = new Object();
 
-et hoursSum = 0;
+let hoursSum = 0;
 let daysSum = 0;
 
 /*Function for parse table from DOM. Finded data pushing to array parseData */
