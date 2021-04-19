@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" type="text/css" href="popup.css">
     <meta charset="utf-8">
     <title>Popup vsExtension</title>
   </head>
   <body>
+    <div id='flex-container'>
+  <div>
     <h1>Popup</h1>
-    <h1>Paragraph replacer</h1>
+  </div>
+  <div>
     <input type="text" id="userinput"></input>
-    <!-- <input type="button" id="butGet" value="Get Content DOM"></button> -->
+  </div>
+  <div>
+    <h1 id="user_responce">No data</h1>
+  </div>
+  <div>
     <input type="button" id="butSend" value="Send data to Content Page"></button>
     <input type="button" id="butShow" value="console log"></button>
-
+  </div>
+</div>
     <script src="popup.js" charset="utf-8"></script>
   </body>
 </html>
