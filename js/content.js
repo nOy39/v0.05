@@ -42,7 +42,7 @@ function parseTableToArr(id, array) {
               }
           array.push(obj)
           }
-          
+
           arrObj[id == "ftab_place" ? "isActive" : "isClosed"] = array
     }
     parseData.push(arrObj)
@@ -51,8 +51,8 @@ function parseTableToArr(id, array) {
 chrome.runtime.onMessage.addListener(gotMessage)
 
 function gotMessage(message, sender, sendResponse) {
-  if (message.action == 'fromPopup' && message.userinput != 0) {
-    popup = !popup
+  // if (message.action == 'fromPopup' && message.userinput != 0) {
+  //   popup = !popup
     parseTable();
     // findWorking(parseData, message.userinput)
     // calculate()
@@ -60,7 +60,7 @@ function gotMessage(message, sender, sendResponse) {
       console.dir(response);
       console.log(parseData);
     });
-  }
+  // }
   console.log(popup);
     fromPopup = message
     //console.log(message);
